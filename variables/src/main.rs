@@ -49,7 +49,7 @@ fn main() {
     //Modifying a Tuple
     let mut m_tup : (i32, f64, u8) = (-2, 2.0, 3);
     m_tup.1 += 2.5;
-    println!("Modified the second: {}", m_tup.2);\
+    println!("Modified the second: {}", m_tup.2);
 
     /*
     Defining Arrays 
@@ -60,6 +60,10 @@ fn main() {
     //Defining Array with Type and Fixed Size
     let def_1: [i32; 5] = [1,2,3,4,5];
     //Concise defintion for Duplicates [value, repeat]
-    let def_2: [3; 5];
+    let def_2 = [3; 5];
+    
+    //Tuple of two Arrays
+    let t = ([1, 2], [2; 3]);
+    println!("Accessing second's third: {}", t.1[2]);
 }
 
