@@ -23,7 +23,7 @@ rustup self uninstall
 ```
 # Cargo: Rust's Build System and Package Manager
 1. Builds your code
-2. Donwloads libraries your code depends on
+2. Downloads libraries your code depends on
 3. Use this strictly for managing your Rust projects
 
 ## Checking Cargo Version

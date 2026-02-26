@@ -9,10 +9,13 @@ fn main() {
     //Shadow Variable
     let mut _mut = 2.0;
 
+    //Defining Constants, Cannot be defined without a type
+    const THIS_IS_A_CONSTANT: u32 = 3;
+
     /*
     Defining Variables
     Architecture Specific Signed Integers
-    Capacity: -2^n-1 to 2^n-1 -1
+    Capacity: -2^(n-1) to 2^(n-1) -1
     */
     let _int_i8: i8 = 8;  // -128 to 127
     let _int_i16: i16 = 16;
@@ -22,7 +25,7 @@ fn main() {
 
     /*
     Architecture Specific Unsigned Integers
-    Capacity: 0 - 2^n-1
+    Capacity: 0 - 2^(n-1)
     */
     let _uint_u8: u8 = 8; // 0 to 255
     let _uint_u16: u16 = 16;
@@ -49,7 +52,7 @@ fn main() {
     //Modifying a Tuple
     let mut m_tup : (i32, f64, u8) = (-2, 2.0, 3);
     m_tup.1 += 2.5;
-    println!("Modified the second: {}", m_tup.2);
+    println!("Modified the second: {}", m_tup.1);
 
     /*
     Defining Arrays 
